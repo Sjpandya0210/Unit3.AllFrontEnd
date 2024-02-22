@@ -1,13 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+//style
+import './App.css';
+//components
+import PlayersList from './components/PlayersList';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-
-    </>
+    <div>
+      <BrowserRouter>
+      <Routes>
+        <Route path= "/playerslist" element= { <PlayersList />}/>
+      </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 

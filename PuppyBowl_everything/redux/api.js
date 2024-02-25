@@ -17,6 +17,12 @@ endpoints: (builder) => ({
             url: "/players",
         }),
     }),
+    playerDetails: builder.query({
+        query: ({id}) => ({
+            url: `/players/${id}`
+        })
+    }),
+
     addPlayer: builder.query({
         query: (body) => ({
             url: "",
@@ -27,4 +33,4 @@ endpoints: (builder) => ({
     }),
 }),
 })
-export const {usePlayerslistQuery} = apiSlice; 
+export const {usePlayerslistQuery, usePlayerDetailsQuery} = apiSlice; 

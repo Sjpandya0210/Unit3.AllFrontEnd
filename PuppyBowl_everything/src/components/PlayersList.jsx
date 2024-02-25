@@ -36,7 +36,7 @@ console.log("This is data",data)
             <h2>Name: {player.name}</h2>
             <img src={player.imageUrl} />
             <h2>Status {player.status}</h2>
-            {/* <Link to={`/plantdetails/${plant.plant_id}`}>See More Details</Link> */}
+            <Link to={`/playerdetails/${player.id}`}>See More Details</Link>
           </div>
         );
       })}

@@ -4,7 +4,7 @@ function Navbar (){
     return (
        <nav>
         <NavLink to = "/playerslist">PlayersList</NavLink>
-        {/* <NavLink to = "/addplayer">AddPlayer</NavLink> */}
+        <NavLink to = "/addplayer">AddPlayer</NavLink>
        </nav>
     );
 }

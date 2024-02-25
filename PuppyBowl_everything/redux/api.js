@@ -23,14 +23,13 @@ endpoints: (builder) => ({
         })
     }),
 
-    addPlayer: builder.query({
+    addPlayer: builder.mutation({
         query: (body) => ({
-            url: "",
+            url: "/players",
             method: "POST",
-            body
+            body,
         }),
-       
     }),
 }),
 })
-export const {usePlayerslistQuery, usePlayerDetailsQuery} = apiSlice; 
+export const {usePlayerslistQuery, usePlayerDetailsQuery, useAddPlayerMutation} = apiSlice; 

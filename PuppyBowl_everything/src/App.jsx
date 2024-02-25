@@ -4,6 +4,7 @@ import './App.css';
 //components
 import PlayersList from './components/PlayersList';
 import PlayerDetails from './components/PlayerDetails';
+import AddPlayer from './components/AddPlayer';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path= "/playerslist" element= { <PlayersList />}/>
         <Route path = "/playerdetails/:id" element={<PlayerDetails />}/>
+        <Route path = "/addplayer" element= {<AddPlayer />}/>
       </Routes>
       </BrowserRouter>
     </div>

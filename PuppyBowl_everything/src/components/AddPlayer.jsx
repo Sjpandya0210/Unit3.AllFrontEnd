@@ -50,7 +50,7 @@ function AddPlayer (){
     <section>
         <h2>Add a player</h2>
         {error && <p>{error}</p>}
-      <form>
+      <form className="form">
         <label htmlFor="name">Name: </label>
         <input value={form.name} name="name" onChange={handleChange} />
         <label htmlFor="breed">Breed:</label>
@@ -61,9 +61,9 @@ function AddPlayer (){
           <option value="field">Field</option>
           <option value="bench">Bench</option>
         </select>
-        <label htmlFor="imageUrl">Image url:</label>
+        <label htmlFor="imageUrl" className="img">Image url:</label>
         <input value={form.imageUrl} name="imageUrl" onChange={handleChange} />
-        <button onClick={handleSubmit}>Submit</button>
+        <button className="btn" onClick={handleSubmit}>Submit</button>
       </form>
     </section>
     );

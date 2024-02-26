@@ -2,6 +2,8 @@
 import { usePlayerslistQuery } from "../../redux/api";
 import React, { useEffect} from "react";
 import { Link } from "react-router-dom";
+import "../App.css" 
+
 
 function playerslist() {
   const { data = {}, error, isLoading } = usePlayerslistQuery();
@@ -34,7 +36,7 @@ console.log("This is data",data)
         return (
           <div key={player.id}>
             <h2>Name: {player.name}</h2>
-            <img src={player.imageUrl} />
+            <img className= "img2" src={player.imageUrl} />
             <h2>Status {player.status}</h2>
             <Link to={`/playerdetails/${player.id}`}>See More Details</Link>
           </div>

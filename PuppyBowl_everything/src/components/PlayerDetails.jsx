@@ -39,7 +39,7 @@ function PlayerDetails (){
         <section>
             <h2>Player details </h2>
             <h3>Name: {data.data.player.name} </h3>
-            <img src = {data.data.player.imageUrl} />
+            <img className= "img2" src = {data.data.player.imageUrl} />
             <p>Breed: {data.data.player.breed}</p>
             <p>Status: {data.data.player.status}</p>
         </section>

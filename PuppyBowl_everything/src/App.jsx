@@ -7,6 +7,7 @@ import PlayerDetails from './components/PlayerDetails';
 import AddPlayer from './components/AddPlayer';
 import Navbar from './components/Navbar';
 
+
 function App() {
   console.log("This is App")
   return (
